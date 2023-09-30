@@ -5,8 +5,8 @@ slug: example-slug
 
 tags: reactjs, css, python, nodejs
 
-domain: 
-subtitle:
+domain: vivekatwal.hashnode.dev
+subtitle: Example subtitle
 
 cover:
 
