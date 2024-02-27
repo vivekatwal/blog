@@ -56,3 +56,73 @@ $ git rebase master
 By rebasing your branch on top of the target branch (e.g., "master"), you can keep a clean and linear commit history.
 
 It's important to note that using git rebase can rewrite commit history, so it should be used with caution, especially in shared or public repositories. Communication and collaboration with the team are essential to ensure everyone is aware of the changes and potential conflicts that may arise.
+
+## Rebasing onto a commit
+
+Rebasing a branch onto a specific commit in Git is aimed at achieving a cleaner, more linear history and integrating changes from one part of a project into another in a seamless manner. Let's delve into a practical example to illustrate the concept and its benefits more clearly.
+
+### Scenario
+
+Imagine you're working on a new feature for a project in a branch called `feature-x`. The project's main branch is called `main`. While you've been working on `feature-x`, several important updates and bug fixes have been made to the `main` branch. To ensure that `feature-x` incorporates these updates and is based on the latest version of `main`, you decide to rebase `feature-x` onto the latest commit of the `main` branch.
+
+### Initial State
+
+* **Main Branch (**`main`): A-B-C-D
+    
+* **Feature Branch (**`feature-x`): A-B-E-F
+    
+
+Here, `A` and `B` represent initial commits that are common to both branches. Commits `C` and `D` were made to `main` after the `feature-x` branch was created, and `E` and `F` are commits unique to `feature-x`.
+
+### Objective
+
+You want to update `feature-x` so it includes the changes from `C` and `D`, and still retains its unique changes (`E` and `F`), but starts from commit `D`.
+
+### Steps to Achieve This
+
+1. **Identify the Latest Commit on** `main`: This is commit `D` in our example.
+    
+2. **Rebase** `feature-x` onto Commit `D`:
+    
+
+Before rebasing, the branches look like this:
+
+```python
+main:       A - B - C - D
+             \
+feature-x:    E - F
+```
+
+After rebasing, you want them to look like this:
+
+```python
+main:       A - B - C - D
+                         \
+feature-x:                E' - F'
+```
+
+3. **Execute the Rebase**:
+    
+    * Check out to `feature-x` and start the rebase:
+        
+        ```bash
+        git checkout feature-x
+        git rebase main
+        ```
+        
+    
+    This moves the base of `feature-x` from `B` to `D`, and reapplies commits `E` and `F` on top of `D`, resulting in new commits `E'` and `F'` (they are new because their parent has changed, hence their content and commit hashes might also change if there were any conflicts resolved during the rebasing process).
+    
+
+### What We Achieve
+
+* **Linear History**: The `feature-x` branch now appears as if it was created from the latest commit on `main`, making the project history easier to understand.
+    
+* **Incorporated Updates**: `feature-x` now includes all the updates and bug fixes (`C` and `D`) that were made to `main` after `feature-x` was originally branched off.
+    
+* **Easier Integration**: Merging `feature-x` back into `main` will be straightforward because it's based on the latest commit of `main`. This reduces the likelihood of merge conflicts.
+    
+
+### Conclusion
+
+Rebasing onto a specific commit, especially in a feature branch scenario, helps ensure that your work is built on the most up-to-date base. This practice facilitates easier merges, keeps the project history cleaner, and helps avoid the complexities associated with divergent project histories.
