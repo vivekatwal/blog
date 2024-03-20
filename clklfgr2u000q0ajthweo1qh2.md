@@ -257,3 +257,5 @@ And if you are building applications for creative fields, marketing, sales, fict
 * [A Guide to Prompt Engineering](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/lecture/Prompt-Engineering-Lecture-Elvis.pdf?ref=mlq.ai)
     
 * [Prompt Papers](https://github.com/thunlp/PromptPapers)
+    
+* [Azure](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions)
