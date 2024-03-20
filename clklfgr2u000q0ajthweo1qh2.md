@@ -75,6 +75,11 @@ But as the "Let's think step by step" example illustrates, apparent failures of 
 
 ---
 
+* prompt principle for instructions [here](https://arxiv.org/abs/2312.16171v1)
+    
+
+---
+
 There are different techniques proposed by several researchers for different purposes and different cases such as:
 
 * Zero shot [paper](https://arxiv.org/abs/2205.11916) 2022
