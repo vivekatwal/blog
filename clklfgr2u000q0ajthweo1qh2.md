@@ -221,6 +221,20 @@ ReAct: synergizing reasoning and acting in language models [paper](https://arxiv
 
 ---
 
+## Parameters
+
+Temprature: value range from 0 to 2, and
+
+the output at temprature value 0.1 is more focused, concrete and have consistent output where as 2 will have more random and varied output.
+
+you will have to figure out the balanced value through trial and error.
+
+If you are building application in field like legal, medical prescription , technical domain here you might require temprature as 0.2 or so..
+
+And if you are building applications for creative fields, marketing, sales, fiction writer, idea generation you might agree with higher temprature.
+
+---
+
 ## Prompt tools
 
 [LMQL](https://lmql.ai/)
