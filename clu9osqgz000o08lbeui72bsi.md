@@ -7,7 +7,18 @@ tags: jupyter, jupyter-notebook
 
 ---
 
-## Installation
+Jupyter notebook make life easier for
+
+* **Begineer** to learn and understand step by step
+    
+* **Experts** to explore data,visualiations.
+    
+* **Mentors** to create course
+    
+* **Speakers** for demonstration
+    
+
+# How to enable virtualenv on jupyter notebook
 
 Installation
 
