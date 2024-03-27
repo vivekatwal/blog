@@ -7,7 +7,7 @@ tags: jupyter, jupyter-notebook
 
 ---
 
-## Jupyter
+## Installation
 
 Installation
 
@@ -38,6 +38,22 @@ Remove environment from jupyter
 ```plaintext
 jupyter kernelspec uninstall envname
 ```
+
+## Themes
+
+```plaintext
+pip install jupyterthemes
+```
+
+## How to install extension
+
+```plaintext
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install
+```
+
+* [plotly extension](https://community.plotly.com/t/jupyterlab-extension-install-for-plotly-4-9-0-fails/44520/4)
+    
 
 ## Jupyter hub
 
