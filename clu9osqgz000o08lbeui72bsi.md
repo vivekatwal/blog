@@ -2,7 +2,7 @@
 title: "Jupyter Installation"
 datePublished: Wed Jun 29 2022 18:30:00 GMT+0000 (Coordinated Universal Time)
 cuid: clu9osqgz000o08lbeui72bsi
-slug: jupyter
+slug: jupyter-installation
 tags: jupyter, jupyter-notebook
 
 ---
